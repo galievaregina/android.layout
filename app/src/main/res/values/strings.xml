@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab1.1</string>
+    <string name="Hello">Hello</string>
+    <string name="moving">Move to the next part</string>
+    <string name="slogan">Мир, Любовь, Искусство</string>
+    <string name="need">Need house</string>
+    <string name="seven">7</string>
+
+</resources>

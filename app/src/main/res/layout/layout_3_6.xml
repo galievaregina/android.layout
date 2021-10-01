@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <android.widget.RatingBar
+            android:id="@+id/rating1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/purple_200"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintBottom_toStartOf="@+id/image5"
+            app:layout_constraintEnd_toTopOf="@+id/image5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/slogan"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/design_default_color_primary_variant"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintBottom_toTopOf="@id/edit7"
+            app:layout_constraintEnd_toEndOf="@+id/check6"
+            app:layout_constraintStart_toStartOf="@+id/image5"
+            />
+
+        <android.widget.QuickContactBadge
+            android:id="@+id/contact3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/Brown"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edit7"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            app:layout_constraintBottom_toEndOf="@id/edit7"
+             />
+
+        <android.widget.Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/Hello"
+            android:textSize="20sp"
+            android:background="@color/SkyBlue"
+            android:textColor="@color/black"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@id/view2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/picture"
+            app:layout_constraintDimensionRatio="1:2"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toStartOf="@id/check6"
+            app:layout_constraintStart_toEndOf="@+id/rating1" />
+
+        <android.widget.CheckBox
+            android:id="@+id/check6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/need"
+            android:background="@color/Orange"
+            app:layout_constraintDimensionRatio="1:2"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+            app:layout_constraintStart_toEndOf="@+id/image5"
+             />
+
+        <EditText
+            android:id="@+id/edit7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/Coral"
+            android:hint="@string/seven"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:gravity="center"
+            app:layout_constraintDimensionRatio="1:2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/view2"
+            app:layout_constraintTop_toStartOf="@id/view2"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
